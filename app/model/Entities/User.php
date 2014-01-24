@@ -1,11 +1,13 @@
 <?php
-namespace Model\Entities;
-
-use Kdyby\Doctrine\Entities\BaseEntity;
+namespace DoctrineSkeleton\Model\Entities;
 
 use Doctrine\ORM\Mapping as ORM;
+use Kdyby\Doctrine\Entities\BaseEntity;
 use Model\UserManager;
 
+/**
+ * @ORM\Entity
+ */
 class User extends BaseEntity
 {
 	/**

@@ -2,6 +2,7 @@
 
 namespace App;
 
+use DoctrineSkeleton\Model\Entities\User;
 use Nette,
 	Model;
 
@@ -14,14 +15,14 @@ class HomepagePresenter extends BasePresenter
 
 	public function renderDefault()
 	{
-		$user = $this->entityManager->find(Model\Entities\User::getClassName(), '10'); //Najdi usera s id 10
+		$user = $this->entityManager->find(User::getClassName(), '10'); //Najdi usera s id 10
 		if ($user) {
 			//user existuje
 		} else {
 			//user neexistuje
 		}
 
-		$novejUser = new Model\Entities\User();
+		$novejUser = new User();
 		$novejUser->setName('Franta Toulen');
 		$novejUser->setPassword('tajneHeslo');
 

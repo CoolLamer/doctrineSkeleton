@@ -15,9 +15,8 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
 	/** @var  EntityManager */
 	protected $entityManager;
 
-	public function startup()
+	public function injectEntityManager(EntityManager $entityManager)
 	{
-		self::startup();
-		//$this->entityManager = $this->context->dao;
+		$this->entityManager = $entityManager;
 	}
 }
