@@ -17,7 +17,6 @@
 	"require": {
 		"php": ">= 5.3.0",
 		"nette/nette": "~2.1.0",
-		"dg/adminer-custom": "1.*",
 		"kdyby/doctrine": "v1.1.0"
 	},
 	"require-dev": {
