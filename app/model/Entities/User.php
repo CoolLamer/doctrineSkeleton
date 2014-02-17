@@ -38,6 +38,11 @@ class User extends BaseEntity
 		return $this->id;
 	}
 
+	public function skalpUser()
+	{
+		//Skalpuje uzivatele
+	}
+
 
 	public function __clone()
 	{

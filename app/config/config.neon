@@ -36,3 +36,4 @@ services:
 #	- Model\UserManager
 	- App\RouterFactory
 	router: @App\RouterFactory::createRouter
+	UserService: DoctrineSkeleton\Model\Services\UserService;
